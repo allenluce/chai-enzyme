@@ -40,7 +40,7 @@
 
 ## Installation
 
-`chai-enzyme` depends on:
+`@allenluce/chai-enzyme` depends on:
 
 ```js
 "peerDependencies": {
@@ -56,14 +56,14 @@
 to install it manually
 
 ```
-$ npm install chai-enzyme --save-dev
+$ npm install @allenluce/chai-enzyme --save-dev
 ```
 
 ## Setup
 
 ```js
 import chai from 'chai'
-import chaiEnzyme from 'chai-enzyme'
+import chaiEnzyme from '@allenluce/chai-enzyme'
 
 chai.use(chaiEnzyme()) // Note the invocation at the end
 ```
@@ -73,7 +73,7 @@ chai.use(chaiEnzyme()) // Note the invocation at the end
 You can also provide a custom debug function that can print useful information
 about the `wrapper` that you are using.
 
-The default one that chai-enzyme comes with, will pretty print the HTML of the
+The default one that @allenluce/chai-enzyme comes with, will pretty print the HTML of the
 wrapper under test.
 
 ```shell
