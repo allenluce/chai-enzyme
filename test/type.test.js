@@ -1,4 +1,4 @@
-import {mount, shallow} from 'enzyme'
+import { mount, shallow } from 'enzyme'
 
 class Foo extends React.Component {
   render () {

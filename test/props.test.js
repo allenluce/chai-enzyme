@@ -17,7 +17,7 @@ class Fixture extends React.Component {
     return (
       <div>
         <ul>
-          <li><User index={1} objectProp={{foo: 'bar'}} /></li>
+          <li><User index={1} objectProp={{ foo: 'bar' }} /></li>
           <li><User index={2} /></li>
         </ul>
       </div>
@@ -30,20 +30,20 @@ const it = createTest(<Fixture />)
 describe('#props', () => {
   describe('([ key, key, key... ])', () => {
     it('passes when the actual matches the expected', (wrapper) => {
-      expect(wrapper.find(User).first()).to.have.props([ 'index' ])
+      expect(wrapper.find(User).first()).to.have.props(['index'])
     }, { render: false })
 
     it('passes negated when the actual does not match the expected', (wrapper) => {
-      expect(wrapper.find(User).first()).to.not.have.props([ 'invalid' ])
+      expect(wrapper.find(User).first()).to.not.have.props(['invalid'])
     }, { render: false })
 
     it('fails when the actual does not match the expected', (wrapper) => {
       expect(() => {
-        expect(wrapper.find(User).first()).to.have.props([ 'invalid' ])
+        expect(wrapper.find(User).first()).to.have.props(['invalid'])
       }).to.throw("to have props [ 'invalid' ]")
 
       expect(() => {
-        expect(wrapper.find(User).first()).to.not.have.props([ 'index' ])
+        expect(wrapper.find(User).first()).to.not.have.props(['index'])
       }).to.throw("not to have props [ 'index' ]")
     }, { render: false })
   })
@@ -69,12 +69,12 @@ describe('#props', () => {
 
     it('fails when the actual is undefined', () => {
       expect(() => {
-        expect(undefined).to.have.props([ 'index' ])
+        expect(undefined).to.have.props(['index'])
       }).to.throw()
     })
   })
 
   it('chains', (wrapper) => {
-    expect(wrapper.find(User).first()).to.have.props([ 'index', 'objectProp' ]).deep.equal([ 1, {foo: 'bar'} ])
+    expect(wrapper.find(User).first()).to.have.props(['index', 'objectProp']).deep.equal([1, { foo: 'bar' }])
   }, { render: false })
 })

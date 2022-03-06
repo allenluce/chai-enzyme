@@ -1,4 +1,4 @@
-import {shallow, render, mount} from 'enzyme'
+import { shallow, render, mount } from 'enzyme'
 import wrap from '../src/wrap'
 
 class ClassSyntax extends React.Component {
@@ -58,7 +58,7 @@ describe('#inspect', () => {
     it('returns unknown', () => {
       expect(String(inspect(render(<ClassSyntax />)))).to.equal('the node in <??? />')
       expect(String(inspect(render(<DisplayNameSyntax />)))).to.equal('the node in <??? />')
-      expect(String(inspect(render(<SymbolComponent />)))).to.equal(`the node in <??? />`)
+      expect(String(inspect(render(<SymbolComponent />)))).to.equal('the node in <??? />')
     })
   })
 })

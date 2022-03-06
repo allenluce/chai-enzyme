@@ -1,4 +1,4 @@
-import {mount, render, shallow} from 'enzyme'
+import { mount, render, shallow } from 'enzyme'
 
 const defaults = {
   shallow: true,

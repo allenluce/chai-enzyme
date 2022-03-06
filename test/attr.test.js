@@ -10,11 +10,11 @@ class Fixture extends React.Component {
     return (
       <div id='root'>
         <span id='child'>test</span>
-        <video itemScope allowFullScreen={true} autoPlay={''} hidden={false} controls={null} loop={undefined}>test2</video>
-        <audio disabled name={''} contentEditable={false} spellCheck={null} rel={magicToStringObject}>test3</audio>
+        <video itemScope allowFullScreen={true} autoPlay='' hidden={false} controls={null} loop={undefined}>test2</video>
+        <audio disabled name='' contentEditable={false} spellCheck={null} rel={magicToStringObject}>test3</audio>
         <table>
           <tbody>
-            <tr rowSpan={0} rows={0} cols={'4'} size={'0'} />
+            <tr rowSpan={0} rows={0} cols='4' size='0' />
           </tbody>
         </table>
       </div>

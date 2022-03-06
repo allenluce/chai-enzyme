@@ -1,4 +1,4 @@
-export default function type ({wrapper, markup, arg1, sig}) {
+export default function type ({ wrapper, markup, arg1, sig }) {
   const actual = wrapper.type()
 
   this.assert(

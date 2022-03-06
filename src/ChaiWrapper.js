@@ -93,7 +93,7 @@ export default class ChaiWrapper {
    */
 
   _wrapOverwriteAssertion (assertion, _super, chaiWrapper) {
-    const {flag, inspect} = chaiWrapper.utils
+    const { flag, inspect } = chaiWrapper.utils
     const debug = chaiWrapper.debug
 
     return function (arg1, arg2) {
@@ -145,7 +145,7 @@ export default class ChaiWrapper {
    */
 
   _wrapAssertion (assertion, chaiWrapper) {
-    const {flag, inspect} = chaiWrapper.utils
+    const { flag, inspect } = chaiWrapper.utils
     const debug = chaiWrapper.debug
 
     return function (arg1, arg2) {

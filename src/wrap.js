@@ -1,4 +1,4 @@
-import {ShallowWrapper, ReactWrapper} from 'enzyme'
+import { ShallowWrapper, ReactWrapper } from 'enzyme'
 
 import CheerioTestWrapper from './CheerioTestWrapper'
 import ShallowTestWrapper from './ShallowTestWrapper'

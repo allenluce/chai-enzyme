@@ -1,4 +1,4 @@
-import {prettyPrint} from 'html'
+import { prettyPrint } from 'html'
 
 function indent (n) {
   return Array(n + 1).join(' ')

@@ -2,7 +2,7 @@ class Fixture extends React.Component {
   render () {
     return (
       <div>
-        <input ref='test' />
+        <input ref='test' /> {/* eslint-disable-line react/no-string-refs */}
       </div>
     )
   }
